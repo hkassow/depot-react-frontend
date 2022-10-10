@@ -9,6 +9,7 @@ const Login = () => {
         console.log('Successful login as:', res)
         let userObj = jwt_decode(res.credential)
         login(userObj)
+        console.log(userObj)
     }
     return (
         <>
